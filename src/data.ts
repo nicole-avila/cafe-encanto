@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    title: "Svart",
+    title: "Kaffe",
     description:
       "Svart kaffe är så enkelt som det kan bli med malda kaffebönor bryggda i hett vatten, serverade varma. Och om du vill låta det låta lite fint kan du kalla svart kaffe vid dess riktiga namn: café noir.",
     ingredients: ["Kaffe"],
