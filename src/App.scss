@@ -1,6 +1,15 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.app {
+  max-width: 1280px;
+  height: 100vh;
+  margin: auto;
 }
