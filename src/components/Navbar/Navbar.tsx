@@ -45,7 +45,7 @@ export default function Navbar() {
       >
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
-        <Link to="/coffee">Vår Kaffe</Link>
+        <Link to="/coffee">Kaffe</Link>
         <Link to="/about-us">Om Oss</Link>
       </div>
     </div>
