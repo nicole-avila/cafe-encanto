@@ -1,0 +1,18 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &__content {
+    background: hotpink;
+    width: 306px;
+    height: 326px;
+    border-radius: 11px;
+  }
+}
