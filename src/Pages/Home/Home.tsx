@@ -1,9 +1,13 @@
+import Button from "../../components/Button/Button";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Home.scss";
 
 export default function Home() {
   return (
     <div className="home">
-      <h1>home</h1>
+      <Navbar />
+      <h1> hero bild</h1>
+      <Button btnText="Christmas Edition" />
     </div>
   );
 }
