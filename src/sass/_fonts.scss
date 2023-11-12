@@ -1,0 +1,35 @@
+@import "./_colors.scss";
+
+@mixin logoTitle {
+  color: $w;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin headline {
+  color: $encantoLight;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+@mixin bodyText {
+  color: $w;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 62px; /* 193.75% */
+  letter-spacing: 0.64px;
+}
+
+@mixin textUppercase {
+  color: $w;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+@import "./_colors.scss";
+
+@mixin btnEncanto {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 32px;
+  background: $encantoLight;
+  color: $w;
+}
