@@ -43,7 +43,7 @@ export default function Navbar() {
           menuVisibility ? "navbar__menu-links" : ""
         }`}
       >
-        <Link to="/">Home</Link>
+        <Link to="/">Hem</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/coffee">Kaffe</Link>
         <Link to="/about-us">Om Oss</Link>
