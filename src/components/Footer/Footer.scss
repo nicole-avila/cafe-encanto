@@ -1,0 +1,63 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.footer {
+  background: $encantoDark;
+  color: $w;
+  @include bodyText;
+  padding: 3rem 1rem;
+  margin: 2rem 0 0 0;
+
+  &__headline {
+    padding: 1rem 0;
+  }
+
+  &__headline-title {
+    letter-spacing: 0.8px;
+  }
+
+  &__headline-text {
+    font-weight: 500;
+  }
+
+  &__subscribe-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    width: 300px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    border: none;
+    text-indent: 11px;
+    margin: 0.5rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 3.1rem;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  & img {
+    width: 45px;
+    padding: 0.4rem;
+  }
+}

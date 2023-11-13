@@ -1,5 +1,6 @@
 // import "./Coffee.scss";
 
+import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
 export default function Coffee() {
@@ -7,6 +8,7 @@ export default function Coffee() {
     <div className="coffee">
       <Navbar />
       <h1>Coffee</h1>
+      <Footer />
     </div>
   );
 }
