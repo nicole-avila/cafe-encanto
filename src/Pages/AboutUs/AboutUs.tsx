@@ -2,12 +2,19 @@
 
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
+import heroImg from "../../assets/hero.jpg";
 
 export default function AboutUs() {
   return (
     <div className="about">
       <Navbar />
-      <h1>AboutUs</h1>
+      <Hero
+        image={{
+          src: heroImg,
+          alt: "hero image of a white cup o coffee and teal background",
+        }}
+      />
       <Footer />
     </div>
   );

@@ -13,3 +13,11 @@ export interface ProductData {
   price: number;
   title: string;
 }
+
+export interface ImageProps {
+  image: {
+    src: string;
+    alt: string;
+  };
+  className?: string;
+}

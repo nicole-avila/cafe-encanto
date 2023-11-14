@@ -17,6 +17,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
+      {/* <div className="navbar__content"> */}
       <div className="navbar__logo">
         <h1>Café Encanto</h1>
         <img src={logoSmall} alt="under line detail for logo Cafe Encanto" />
@@ -48,6 +49,7 @@ export default function Navbar() {
         <Link to="/coffee">Kaffe</Link>
         <Link to="/about-us">Om Oss</Link>
       </div>
+      {/* </div> */}
     </div>
   );
 }

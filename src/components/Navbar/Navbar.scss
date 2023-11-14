@@ -7,8 +7,20 @@
   background: $encantoOpacity;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
+
+  //   margin: auto;
   padding: 0 2rem;
+
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 2;
+  //   width: 100%;
+
+  &__navbar__content {
+  }
 
   &__logo {
     display: flex;
