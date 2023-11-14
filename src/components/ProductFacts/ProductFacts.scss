@@ -1,0 +1,27 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.facts {
+  @include bodyText;
+  color: $b;
+  text-align: left;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 25px;
+  }
+
+  & strong {
+    padding-left: 0.4rem;
+  }
+
+  & hr {
+    margin: 0.5rem;
+  }
+}

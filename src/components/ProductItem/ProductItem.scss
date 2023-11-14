@@ -1,0 +1,71 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.product-item {
+  background: $w;
+  padding: 1rem 2rem;
+
+  &__product {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: $w;
+    padding: 2rem 0;
+  }
+
+  &__img-container {
+    width: 30%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__product-info {
+    width: 50%;
+    margin: 0 1rem;
+    text-align: left;
+    @include bodyText;
+    color: $b;
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $encantoDark;
+  }
+
+  & a:hover {
+    border-bottom: 1px solid $latte;
+  }
+
+  &__breadcrumbs-p {
+    color: $encantoDark;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .product-item {
+    &__product {
+      flex-direction: column;
+    }
+    &__img-container {
+      width: 80%;
+    }
+
+    &__product-info {
+      width: 80%;
+    }
+
+    &__product-info h1 {
+      text-align: center;
+    }
+  }
+}

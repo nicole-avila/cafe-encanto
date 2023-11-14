@@ -19,7 +19,7 @@ export const data = [
     ingredients: ["Kaffe"],
     price: 30.0,
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Espresso_Crema.jpg/640px-Espresso_Crema.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const data = [
     ingredients: ["Espresso", "Mjölk", "Skum"],
     price: 45.0,
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cappuccino_in_a_white_cup_%282%29.jpg/640px-Cappuccino_in_a_white_cup_%282%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
   },
   {
     id: 4,

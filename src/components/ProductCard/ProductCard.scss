@@ -2,17 +2,23 @@
 @import "../../sass/_mixins.scss";
 @import "../../sass/_fonts.scss";
 
-.product {
+.product-card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
+  padding: 0.5rem;
 
   &__content {
-    background: hotpink;
-    width: 306px;
-    height: 326px;
+    background: $latte;
+    width: 240px;
+    height: 250px;
     border-radius: 11px;
+    cursor: pointer;
+  }
+
+  & h2 {
+    @include bodyText;
   }
 }
