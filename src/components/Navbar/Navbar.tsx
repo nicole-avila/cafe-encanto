@@ -9,6 +9,17 @@ import { useState } from "react";
 export default function Navbar() {
   const [menuVisibility, setMenuVisibility] = useState(false);
   const [crossVisibility, setCrossVisibility] = useState(true);
+  const [color, setColor] = useState(false);
+
+  function changeColor() {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeColor);
 
   function toggleMenu() {
     setMenuVisibility(!menuVisibility);
@@ -16,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar">
+    <div className={color ? "navbar navbar__bg" : "navbar"}>
       {/* <div className="navbar__content"> */}
       <div className="navbar__logo">
         <h1>Café Encanto</h1>
