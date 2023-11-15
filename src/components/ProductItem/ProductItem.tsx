@@ -19,9 +19,21 @@ export default function ProductItem() {
 
   return (
     <div className="product-item">
-      <div className="product-item__breadcrumbs">
-        <Link to="/menu">Meny {">"}</Link>{" "}
-        <p className="product-item__breadcrumbs-p">{product.title}</p>
+      <div
+        className="product-item__breadcrumbs"
+        role="navigation"
+        aria-label="navigering"
+      >
+        <Link to="/menu" role="link" tabIndex={0}>
+          Tillbaka till Meny {">"}
+        </Link>{" "}
+        <p
+          className="product-item__breadcrumbs-p"
+          role="heading"
+          aria-lbel="produkt"
+        >
+          {product.title}
+        </p>
       </div>
       <div className="product-item__product">
         <div className="product-item__img-container">

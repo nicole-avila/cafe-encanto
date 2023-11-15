@@ -18,10 +18,18 @@ export default function ProductCard({ products, productClick }: ProductProps) {
   return (
     <div className="product-card">
       {products.map((product) => (
-        <div
+        <button
           className="product-card__content"
           key={product.id}
           onClick={() => handleClick(product.id)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleClick(product.id);
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label={product.title}
         >
           <img
             style={{ width: "100%", borderRadius: "8px 8px 0px 0px" }}
@@ -29,7 +37,7 @@ export default function ProductCard({ products, productClick }: ProductProps) {
             alt=""
           />
           <h2>{product.title}</h2>
-        </div>
+        </button>
       ))}
     </div>
   );
