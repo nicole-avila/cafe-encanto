@@ -14,7 +14,7 @@
 
   &__hero-content {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -33,7 +33,7 @@
   &__video-content {
     background: $latte;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     padding: 2rem 0;
   }
 
@@ -68,8 +68,12 @@
       text-align: center;
     }
 
+    &__video-content {
+      height: 75vh;
+    }
+
     &__video {
-      width: 85%;
+      width: 70%;
     }
 
     &__video-text {

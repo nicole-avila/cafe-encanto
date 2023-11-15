@@ -1,0 +1,72 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.menu {
+  position: relative;
+
+  &__title {
+    @include logoTitle;
+    font-size: 10rem;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__links {
+    margin: 2rem 0;
+  }
+
+  &__links a {
+    @include textUppercase;
+    text-decoration: none;
+    margin: 1.5rem;
+  }
+
+  &__links a:hover {
+    border-bottom: 1px solid $w;
+  }
+}
+
+@media only screen and (max-width: 1118px) {
+  .menu {
+    &__title {
+      font-size: 7rem;
+      position: unset;
+      transform: none;
+      padding-top: 1rem;
+    }
+    &__links a {
+      margin: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu {
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    &__links a {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .menu {
+    &__title {
+      font-size: 4rem;
+      text-transform: uppercase;
+    }
+
+    &__links {
+      margin: 0.8rem;
+    }
+  }
+}

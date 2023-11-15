@@ -1,4 +1,4 @@
-// import "./Menu.scss";
+import "./Menu.scss";
 import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
 import Navbar from "../../components/Navbar/Navbar";
@@ -8,6 +8,7 @@ import { data } from "../../data";
 import { useState } from "react";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { ProductData } from "../../interfaces";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [selectedProductId, setSelectedProductId] = useState<number | null>(
@@ -32,6 +33,16 @@ export default function Menu() {
           alt: "a white cup of coffe with a pink macaron besides",
         }}
       />
+
+      <h1 className="menu__title">Meny</h1>
+
+      <div className="menu__links">
+        <a href="#">Kaffe sorter</a>
+        <a href="#">Varma drycker</a>
+        <a href="#">Smooties</a>
+        <a href="#">Christmas Edition</a>
+      </div>
+
       {selectedProductId ? (
         <ProductItem />
       ) : (
