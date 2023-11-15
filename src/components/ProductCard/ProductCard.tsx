@@ -18,7 +18,7 @@ export default function ProductCard({ products, productClick }: ProductProps) {
   return (
     <div className="product-card">
       {products.map((product) => (
-        <button
+        <div
           className="product-card__content"
           key={product.id}
           onClick={() => handleClick(product.id)}
@@ -37,7 +37,7 @@ export default function ProductCard({ products, productClick }: ProductProps) {
             alt=""
           />
           <h2>{product.title}</h2>
-        </button>
+        </div>
       ))}
     </div>
   );

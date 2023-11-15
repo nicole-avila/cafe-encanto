@@ -8,7 +8,6 @@ import { data } from "../../data";
 import { useState } from "react";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { ProductData } from "../../interfaces";
-import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [selectedProductId, setSelectedProductId] = useState<number | null>(
