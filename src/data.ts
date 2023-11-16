@@ -7,7 +7,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe"],
     price: 25.0,
-    image: "assets/kaffee.jpg",
+    image: "/assets/kaffee.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe"],
     price: 30.0,
-    image: "assets/espresso.jpg",
+    image: "/assets/espresso.jpg",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Mjölk", "Skum"],
     price: 45.0,
-    image: "assets/cappuchino.jpg",
+    image: "/assets/cappuchino.jpg",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Mjölk"],
     price: 40.0,
-    image: "assets/latte.png",
+    image: "/assets/latte.png",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Choklad", "Grädde"],
     price: 50.0,
-    image: "assets/mocca.jpg",
+    image: "/assets/mocca.jpg",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Vatten"],
     price: 35.0,
-    image: "assets/americano.jpg",
+    image: "/assets/americano.jpg",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Mjölk", "Karamellsås"],
     price: 55.0,
-    image: "assets/macchiato.jpg",
+    image: "/assets/macchiato.jpg",
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Vaniljglass"],
     price: 60.0,
-    image: "assets/affogato.jpg",
+    image: "/assets/affogato.jpg",
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Mjölk"],
     price: 45.0,
-    image: "assets/cappuchino.jpg",
+    image: "/assets/cappuchino.jpg",
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe", "Is"],
     price: 40.0,
-    image: "assets/kaffee.jpg",
+    image: "/assets/kaffee.jpg",
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe", "Irish Whiskey", "Grädde"],
     price: 55.0,
-    image: "assets/mocca.jpg",
+    image: "/assets/mocca.jpg",
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe", "Kryddor"],
     price: 50.0,
-    image: "assets/americano.jpg",
+    image: "/assets/americano.jpg",
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe"],
     price: 30.0,
-    image: "assets/cappuchino.jpg",
+    image: "/assets/cappuchino.jpg",
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Espresso", "Mjölk"],
     price: 35.0,
-    image: "assets/macchiato.jpg",
+    image: "/assets/macchiato.jpg",
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ export const data = [
     category: "Chocolate",
     ingredients: ["Chokladpulver", "Mjölk", "Grädde", "Chokladströssel"],
     price: 45.0,
-    image: "assets/mocca.jpg",
+    image: "/assets/mocca.jpg",
   },
   {
     id: 16,
@@ -157,7 +157,7 @@ export const data = [
     category: "Tea",
     ingredients: ["Grönt te", "Citronskal", "Apelsinskal", "Honung"],
     price: 40.0,
-    image: "assets/kaffee.jpg",
+    image: "/assets/kaffee.jpg",
   },
   {
     id: 17,
@@ -167,7 +167,7 @@ export const data = [
     category: "Tea",
     ingredients: ["Pepparmynta", "Hett vatten", "Honung (valfritt)"],
     price: 35.0,
-    image: "assets/espresso.jpg",
+    image: "/assets/espresso.jpg",
   },
   {
     id: 18,
@@ -177,7 +177,7 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Jordgubbar", "Banan", "Yoghurt", "Is"],
     price: 50.0,
-    image: "assets/americano.jpg",
+    image: "/assets/americano.jpg",
   },
   {
     id: 19,
@@ -187,7 +187,7 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Hallon", "Blåbär", "Jordgubbar", "Yoghurt", "Is"],
     price: 55.0,
-    image: "assets/mocca.jpg",
+    image: "/assets/mocca.jpg",
   },
   {
     id: 20,
@@ -197,7 +197,7 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Ananas", "Mango", "Banan", "Kokosmjölk", "Is"],
     price: 60.0,
-    image: "assets/affogato.jpg",
+    image: "/assets/affogato.jpg",
   },
   {
     id: 21,
@@ -207,7 +207,7 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Apelsin", "Grapefrukt", "Citron", "Yoghurt", "Is"],
     price: 50.0,
-    image: "assets/macchiato.jpg",
+    image: "/assets/macchiato.jpg",
   },
   {
     id: 22,
@@ -217,7 +217,7 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Mango", "Passionsfrukt", "Vaniljyoghurt", "Is"],
     price: 55.0,
-    image: "assets/americano.jpg",
+    image: "/assets/americano.jpg",
   },
   {
     id: 23,
@@ -227,6 +227,6 @@ export const data = [
     category: "Smoothie",
     ingredients: ["Spenat", "Äpple", "Selleri", "Banan", "Ingefära"],
     price: 45.0,
-    image: "assets/cappuchino.jpg",
+    image: "/assets/cappuchino.jpg",
   },
 ];
