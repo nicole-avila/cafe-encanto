@@ -7,7 +7,7 @@ export const data = [
     category: "Coffee",
     ingredients: ["Kaffe"],
     price: 25.0,
-    image: "src/assets/kaffee.jpg",
+    image: "assets/kaffee.jpg",
   },
   {
     id: 2,
