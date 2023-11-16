@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import logoSmall from "../../assets/logoSmall.svg";
+import encantoIcon from "../../assets/encanto-icon.svg";
 import hamburger from "../../assets/hamburger.svg";
 import cross from "../../assets/cross.svg";
 
@@ -27,11 +27,16 @@ export default function Navbar() {
   }
 
   return (
-    <div className={color ? "navbar navbar__bg" : "navbar"}>
-      {/* <div className="navbar__content"> */}
+    <nav className={color ? "navbar navbar__bg" : "navbar"}>
+      {/* <div className="navbar__wrapper"> */}
+
       <div className="navbar__logo">
         <h1>Café Encanto</h1>
-        <img src={logoSmall} alt="under line detail for logo Cafe Encanto" />
+        <img
+          className="navbar__img-logo"
+          src={encantoIcon}
+          alt="under line detail for logo Cafe Encanto"
+        />
       </div>
 
       {crossVisibility ? (
@@ -56,11 +61,12 @@ export default function Navbar() {
         }`}
       >
         <Link to="/">Hem</Link>
-        <Link to="/menu">Menu</Link>
+        <Link to="/menu">Meny</Link>
         <Link to="/coffee">Kaffe</Link>
         <Link to="/about-us">Om Oss</Link>
       </div>
+
       {/* </div> */}
-    </div>
+    </nav>
   );
 }
