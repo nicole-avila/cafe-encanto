@@ -2,12 +2,17 @@ import "./Coffee.scss";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import coffeeBeans from "../../assets/coffee-beans.jpg";
-import beanField from "../../assets/coffee-bean-field.png";
+import coffeeBeans from "../../../public/assets/coffee-beans.jpg";
+import beanField from "../../../public/assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
 // import coffeeVideo from "../../assets/video.mp4";
+import { useEffect } from "react";
 
 export default function Coffee() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="coffee">
       <Navbar />

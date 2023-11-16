@@ -3,9 +3,9 @@ import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
 import Navbar from "../../components/Navbar/Navbar";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import heroImg from "../../assets/coffee-menu.jpg";
+import heroImg from "../../../public/assets/coffee-menu.jpg";
 import { data } from "../../data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { ProductData } from "../../interfaces";
 
@@ -13,6 +13,10 @@ export default function Menu() {
   const [selectedProductId, setSelectedProductId] = useState<number | null>(
     null
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function handleClick(productId: number) {
     setSelectedProductId(productId);

@@ -3,15 +3,18 @@ import { ProductData } from "../../interfaces";
 import { useParams, Link } from "react-router-dom";
 import { data } from "../../data";
 import ProductFacts from "../ProductFacts/ProductFacts";
+import { useEffect } from "react";
 
 export default function ProductItem() {
   const { productId } = useParams();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const product: ProductData | undefined = data.find(
     (product) => product.id === Number(productId)
   );
-
-  console.log(product);
 
   if (!product) {
     return <h2>Produkten hittades inte...</h2>;
@@ -27,13 +30,7 @@ export default function ProductItem() {
         <Link to="/menu" role="link" tabIndex={0}>
           Tillbaka till Meny {">"}
         </Link>{" "}
-        <p
-          className="product-item__breadcrumbs-p"
-          role="heading"
-          aria-lbel="produkt"
-        >
-          {product.title}
-        </p>
+        <p className="product-item__breadcrumbs-p">{product.title}</p>
       </div>
       <div className="product-item__product">
         <div className="product-item__img-container">

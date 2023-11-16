@@ -3,9 +3,14 @@
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
-import heroImg from "../../assets/hero.jpg";
+import heroImg from "../../../public/assets/hero.jpg";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="about">
       <Navbar />
