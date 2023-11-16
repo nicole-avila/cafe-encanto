@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import coffeeBeans from "../../assets/coffee-beans.jpg";
 import beanField from "../../assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
+// import coffeeVideo from "../../assets/video.mp4";
 
 export default function Coffee() {
   return (
@@ -33,6 +34,10 @@ export default function Coffee() {
         </div>
 
         <div className="coffee__video-content">
+          {/* <video className="coffee__video" controls>
+            <source src={coffeeVideo} type="video/mp4" />
+            Din webbläsare stöder inte videotaggen.
+          </video> */}
           <img className="coffee__video" src={beanField} alt="" />
           <p className="coffee__video-text">
             Vårt engagemang för hög kvalitet genomsyrar hela processen, från

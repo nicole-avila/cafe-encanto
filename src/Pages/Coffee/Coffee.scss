@@ -51,7 +51,7 @@
   }
 }
 
-@media only screen and (min-width: 240px) and (max-width: 980px) {
+@media only screen and (min-width: 240px) and (max-width: 1045px) {
   .coffee {
     overflow: hidden;
     &__hero-content {
@@ -73,7 +73,7 @@
     }
 
     &__video {
-      width: 70%;
+      width: 65%;
     }
 
     &__video-text {
