@@ -1,6 +1,6 @@
 import "./SpecialEditon.scss";
 import Button from "../Button/Button";
-import imageChristmas from "../../assets/coffee-menu.jpg";
+import imageChristmas from "../../../public/assets/coffee-menu.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function SpecialEditon() {

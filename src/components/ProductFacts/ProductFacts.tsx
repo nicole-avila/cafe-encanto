@@ -1,5 +1,5 @@
 import "./ProductFacts.scss";
-import seeMore from "../../assets/plus-icon.svg";
+import seeMore from "../../../public/assets/plus-icon.svg";
 
 export default function ProductFacts() {
   function handelIconClick() {

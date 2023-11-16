@@ -1,9 +1,9 @@
 import "./Footer.scss";
 import Button from "../Button/Button";
-import instagram from "../../assets/instagram.svg";
-import linkedin from "../../assets/linkedin.svg";
-import fb from "../../assets/fb.svg";
-import github from "../../assets/github.svg";
+import instagram from "../../../public/assets/instagram.svg";
+import linkedin from "../../../public/assets/linkedin.svg";
+import fb from "../../../public/assets/fb.svg";
+import github from "../../../public/assets/github.svg";
 
 export default function Footer() {
   return (

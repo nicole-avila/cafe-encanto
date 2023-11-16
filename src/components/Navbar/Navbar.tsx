@@ -1,7 +1,7 @@
 import "./Navbar.scss";
-import encantoIcon from "../../assets/encanto-icon.svg";
-import hamburger from "../../assets/hamburger.svg";
-import cross from "../../assets/cross.svg";
+import encantoIcon from "../../../public/assets/encanto-icon.svg";
+import hamburger from "../../../public/assets/hamburger.svg";
+import cross from "../../../public/assets/cross.svg";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";

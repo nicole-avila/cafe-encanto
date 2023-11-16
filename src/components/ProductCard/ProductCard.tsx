@@ -27,7 +27,7 @@ export default function ProductCard({ products, productClick }: ProductProps) {
               handleClick(product.id);
             }
           }}
-          role="button"
+          // role="button"
           tabIndex={0}
           aria-label={product.title}
         >
