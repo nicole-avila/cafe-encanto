@@ -1,5 +1,6 @@
-export interface button {
+export interface ButtonProps {
   btnText: string;
+  onClick?: () => void;
 }
 
 export interface ProductProps {
