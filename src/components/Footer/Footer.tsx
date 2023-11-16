@@ -57,12 +57,14 @@ export default function Footer() {
               <a
                 href="https://github.com/nicole-avila/cafe-encanto"
                 target="_blank"
+                aria-label="länk till instagram"
               >
                 <img src={instagram} alt="" />
               </a>
               <a
                 href="https://github.com/nicole-avila/cafe-encanto"
                 target="_blank"
+                aria-label="länk till linkedin"
               >
                 <img src={linkedin} alt="" />
               </a>
@@ -71,12 +73,14 @@ export default function Footer() {
               <a
                 href="https://github.com/nicole-avila/cafe-encanto"
                 target="_blank"
+                aria-label="länk till facebook"
               >
                 <img src={fb} alt="" />
               </a>
               <a
                 href="https://github.com/nicole-avila/cafe-encanto"
                 target="_blank"
+                aria-label="länk till github"
               >
                 <img src={github} alt="" />
               </a>
