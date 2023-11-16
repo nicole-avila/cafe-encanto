@@ -37,7 +37,11 @@ export default function ProductItem() {
       </div>
       <div className="product-item__product">
         <div className="product-item__img-container">
-          <img className="product-item__img" src={product.image} alt="" />
+          <img
+            className="product-item__img"
+            src={product.image}
+            alt={product.title}
+          />
         </div>
 
         <div className="product-item__product-info">

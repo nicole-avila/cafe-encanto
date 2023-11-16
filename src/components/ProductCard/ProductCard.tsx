@@ -32,10 +32,11 @@ export default function ProductCard({ products, productClick }: ProductProps) {
           aria-label={product.title}
         >
           <img
-            style={{ width: "100%", borderRadius: "8px 8px 0px 0px" }}
+            className="product-card__img"
             src={product.image}
-            alt=""
+            alt={product.title}
           />
+
           <h2>{product.title}</h2>
         </div>
       ))}
