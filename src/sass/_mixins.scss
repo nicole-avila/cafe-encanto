@@ -1,4 +1,5 @@
 @import "./_colors.scss";
+@import "./_fonts.scss";
 
 @mixin btnEncanto {
   width: 200px;
@@ -7,4 +8,8 @@
   border-radius: 32px;
   background: $encantoLight;
   color: $w;
+  font-size: 1rem;
+  @include bodyText;
+  font-weight: 400;
+  letter-spacing: 1.3px;
 }

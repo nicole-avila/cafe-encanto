@@ -1,0 +1,99 @@
+@import "../../sass/_colors.scss";
+@import "../../sass/_mixins.scss";
+@import "../../sass/_fonts.scss";
+
+.about {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+
+  &__content {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  &__title {
+    @include logoTitle;
+    margin: 0 0 1rem 0;
+  }
+
+  &__us {
+    max-width: 650px;
+    text-align: center;
+    display: flex;
+    @include bodyText;
+  }
+
+  &__follow-us {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  & fieldset {
+    @include bodyText;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  &__link {
+    padding: 0 1rem;
+    @include bodyText;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: $encantoLight;
+  }
+
+  &__link:hover {
+    color: rgb(0, 110, 255);
+  }
+
+  &__input-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  &__content form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content label {
+    @include bodyText;
+    text-align: left;
+  }
+
+  &__content input {
+    width: 300px;
+    height: 45px;
+    flex-shrink: 0;
+    border: none;
+    text-indent: 3px;
+    background: $w;
+  }
+
+  &__content textarea {
+    padding: 0.4rem 0.2rem;
+  }
+
+  &__content button {
+    @include btnEncanto;
+    margin: 1.5rem auto;
+  }
+
+  &__success-message {
+    @include bodyText;
+    background: $encantoLight;
+    color: $encantoDark;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
