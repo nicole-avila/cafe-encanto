@@ -2,7 +2,7 @@
 
 #### Välkommen till Café Encanto – din kaffeupplevelse skapad med kärlek och omtanke.
 
-Café Encanto representerar mitt projekt arbete från vår avslutande kurs inom fördjupning av UX/UI, där vi fokuserar på _Digital Accessibility_.
+Café Encanto representerar mitt projekt arbete från vår avslutande kurs inom fördjupning av UX/UI, där vi fokuserar på **Digital Accessibility**.
 
 Målet med projektet har varit att inte bara skapa en estetiskt tilltalande webbplats för ett café, utan också att göra den tillgänglig för en så bred publik som möjligt.
 
