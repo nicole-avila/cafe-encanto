@@ -6,9 +6,16 @@ import coffeeBeans from "../../../public/assets/coffee-beans.jpg";
 // import beanField from "../../../public/assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
 import coffeeVideo from "../../../public/assets/video.mp4";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Coffee() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/");
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,7 +41,7 @@ export default function Coffee() {
               strävar efter att erbjuda inte bara en dryck, utan en resa genom
               kaffeodlingarnas speciella karaktär.{" "}
             </p>
-            <Button btnText="Tillbaka hem" />
+            <Button btnText="Tillbaka hem" onClick={handleClick} />
           </div>
         </div>
 

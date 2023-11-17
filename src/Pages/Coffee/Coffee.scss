@@ -14,8 +14,8 @@
 
   &__hero-content {
     position: absolute;
-    top: 70%;
-    left: 30%;
+    top: 51%;
+    left: 32%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -33,7 +33,7 @@
   &__video-content {
     background: $latte;
     width: 100%;
-    height: 85vh;
+    height: 65vh;
     padding: 2rem 0;
   }
 
@@ -51,7 +51,7 @@
   }
 }
 
-@media only screen and (min-width: 240px) and (max-width: 1045px) {
+@media only screen and (max-width: 1045px) {
   .coffee {
     overflow: hidden;
     &__hero-content {
@@ -69,11 +69,38 @@
     }
 
     &__video-content {
-      height: 75vh;
+      height: 60vh;
     }
 
     &__video {
-      width: 65%;
+      width: 72%;
+    }
+
+    &__video-text {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .coffee {
+    overflow: hidden;
+    &__hero-content {
+      position: static;
+      transform: none;
+      padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__hero-text {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &__video {
+      width: 85%;
     }
 
     &__video-text {
