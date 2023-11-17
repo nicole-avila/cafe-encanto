@@ -1,6 +1,6 @@
 # Café Encanto
 
-Välkommen till Café Encanto – din kaffeupplevelse skapad med kärlek och omtanke.
+#### Välkommen till Café Encanto – din kaffeupplevelse skapad med kärlek och omtanke.
 
 Café Encanto representerar mitt projekt arbete från vår avslutande kurs inom fördjupning av UX/UI, där vi fokuserar på _Digital Accessibility_.
 
