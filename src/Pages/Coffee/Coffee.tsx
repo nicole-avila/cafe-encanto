@@ -3,9 +3,9 @@ import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import coffeeBeans from "../../../public/assets/coffee-beans.jpg";
-import beanField from "../../../public/assets/coffee-bean-field.png";
+// import beanField from "../../../public/assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
-// import coffeeVideo from "../../assets/video.mp4";
+import coffeeVideo from "../../../public/assets/video.mp4";
 import { useEffect } from "react";
 
 export default function Coffee() {
@@ -39,11 +39,11 @@ export default function Coffee() {
         </div>
 
         <div className="coffee__video-content">
-          {/* <video className="coffee__video" controls>
+          <video className="coffee__video" controls>
             <source src={coffeeVideo} type="video/mp4" />
             Din webbläsare stöder inte videotaggen.
-          </video> */}
-          <img className="coffee__video" src={beanField} alt="" />
+          </video>
+          {/* <img className="coffee__video" src={beanField} alt="" /> */}
           <p className="coffee__video-text">
             Vårt engagemang för hög kvalitet genomsyrar hela processen, från
             böna till bryggning. Varje bönas resa är noga övervakad för att
