@@ -9,17 +9,20 @@ import { useEffect, useRef, useState } from "react";
 export default function AboutUs() {
   const successMessageRef = useRef<HTMLParagraphElement | null>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [handleForm, setHandleForm] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     message: "",
   });
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setHandleForm(true);
   };
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -47,6 +50,23 @@ export default function AboutUs() {
       successMessageRef.current.focus();
     }
   }, [formSubmitted]);
+
+  useEffect(() => {
+    function handleBeforeUnload(e: BeforeUnloadEvent) {
+      if (handleForm) {
+        const message = "du har ett osparad meldande ";
+        e.returnValue = message;
+        return message;
+      }
+      console.log(handleBeforeUnload);
+    }
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      console.log(handleBeforeUnload);
+    };
+  }, [handleForm]);
 
   return (
     <div className="about">
@@ -93,6 +113,7 @@ export default function AboutUs() {
             Tack för ditt meddelande! Vi återkommer till dig snart.
           </p>
         )}
+
         <form onSubmit={handleSubmit}>
           <div className="about__input-content">
             <label htmlFor="">Förnamn</label>
