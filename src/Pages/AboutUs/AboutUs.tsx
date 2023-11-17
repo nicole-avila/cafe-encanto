@@ -119,7 +119,7 @@ export default function AboutUs() {
             <label htmlFor="">Förnamn</label>
             <input
               type="text"
-              placeholder="namn"
+              placeholder="förnamn"
               name="firstName"
               required
               value={formData.firstName}
@@ -165,7 +165,7 @@ export default function AboutUs() {
           <button type="submit">Skicka</button>
         </form>
 
-        <h3 className="about__title">Hitta oss</h3>
+        {/* <h3 className="about__title">Hitta oss</h3> */}
       </div>
       <Footer />
     </div>

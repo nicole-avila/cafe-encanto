@@ -26,6 +26,8 @@
     text-align: center;
     display: flex;
     @include bodyText;
+    font-size: 1.2rem;
+    margin: 0 1.2rem;
   }
 
   &__follow-us {
@@ -37,8 +39,10 @@
 
   & fieldset {
     @include bodyText;
-    max-width: 200px;
+    width: 250px;
+    height: 150px;
     text-align: center;
+    font-size: 1.2rem;
   }
 
   &__link {
