@@ -5,9 +5,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import coffeeBeans from "../../../public/assets/coffee-beans.jpg";
 // import beanField from "../../../public/assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
-import coffeeVideo from "../../../public/assets/video.mp4";
+// import coffeeVideo from "../../../public/video-cafe.mp4";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+// import video from "../../../public/";
 
 export default function Coffee() {
   const navigate = useNavigate();
@@ -47,7 +48,13 @@ export default function Coffee() {
 
         <div className="coffee__video-content">
           <video className="coffee__video" controls>
-            <source src={coffeeVideo} type="video/mp4" />
+            <source src="/video-cafe.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              srcLang="en"
+              src="/subtitles.vtt"
+              label="English"
+            />
             Din webbläsare stöder inte videotaggen.
           </video>
           {/* <img className="coffee__video" src={beanField} alt="" /> */}
