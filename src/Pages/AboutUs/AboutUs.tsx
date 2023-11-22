@@ -20,7 +20,7 @@ export default function AboutUs() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     setHandleForm(true);
   };
 
@@ -73,7 +73,7 @@ export default function AboutUs() {
       <Hero
         image={{
           src: heroImg,
-          alt: "hero image of a white cup o coffee and teal background",
+          alt: "en trevlig bild på en ljus grön kopp med kaffe med en trä bricka under koppen",
         }}
       />
       <div className="about__content">
@@ -87,16 +87,36 @@ export default function AboutUs() {
         <div className="about__follow-us">
           <fieldset className="about__follow-us">
             <legend>Våra länkar</legend>
-            <a className="about__link" href="#" id="linkedIn">
+            <a
+              aria-label="Länk till linkedIn"
+              className="about__link"
+              href="#"
+              id="linkedIn"
+            >
               LinkedIn
             </a>
-            <a className="about__link" href="#" id="linkedIn">
+            <a
+              aria-label="Länk till Instagram"
+              className="about__link"
+              href="#"
+              id="linkedIn"
+            >
               Instagram
             </a>
-            <a className="about__link" href="#" id="linkedIn">
+            <a
+              aria-label="Länk till Facebook"
+              className="about__link"
+              href="#"
+              id="linkedIn"
+            >
               Facebook
             </a>
-            <a className="about__link" href="#" id="linkedIn">
+            <a
+              aria-label="Länk till Github"
+              className="about__link"
+              href="#"
+              id="linkedIn"
+            >
               Github
             </a>
           </fieldset>
@@ -117,8 +137,8 @@ export default function AboutUs() {
           <div className="about__input-content">
             <label htmlFor="">Förnamn</label>
             <input
+              aria-label="skriv in ditt förnamn"
               type="text"
-              placeholder="förnamn"
               name="firstName"
               required
               value={formData.firstName}
@@ -128,8 +148,8 @@ export default function AboutUs() {
           <div className="about__input-content">
             <label htmlFor="">Efternamn</label>
             <input
+              aria-label="skriv in ditt efternamn"
               type="text"
-              placeholder="efternamn"
               name="lastName"
               required
               value={formData.lastName}
@@ -137,10 +157,10 @@ export default function AboutUs() {
             />
           </div>
           <div className="about__input-content">
-            <label htmlFor="">Email</label>
+            <label htmlFor="">Email - Använd dig utav @exempl.se</label>
             <input
+              aria-label="skriv in din epostadress, glöm inte att använda @"
               type="email"
-              placeholder="exempel@mail.se"
               name="email"
               required
               value={formData.email}
@@ -150,7 +170,7 @@ export default function AboutUs() {
           <div className="about__input-content">
             <label htmlFor="">Ditt meddelande</label>
             <textarea
-              placeholder="Skriv ditt medelande här.."
+              aria-label="skriv in ditt medelande i rutan"
               name="message"
               id="message"
               required
@@ -161,10 +181,10 @@ export default function AboutUs() {
             ></textarea>
           </div>
 
-          <button type="submit">Skicka</button>
+          <button type="submit" aria-label="skicka knapp">
+            Skicka
+          </button>
         </form>
-
-        {/* <h3 className="about__title">Hitta oss</h3> */}
       </div>
       <Footer />
     </div>

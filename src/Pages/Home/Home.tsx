@@ -14,7 +14,12 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero image={{ src: hero, alt: "hero image of a white cup o coffee" }} />
+      <Hero
+        image={{
+          src: hero,
+          alt: "En trevlig bild på en ljus grön kopp med kaffe med en trä bricka under koppen",
+        }}
+      />
       <SpecialEditon />
       <Footer />
     </>

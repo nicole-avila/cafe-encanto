@@ -1,6 +1,7 @@
 import "./SpecialEditon.scss";
 import Button from "../Button/Button";
-import imageChristmas from "../../../public/assets/coffee-menu.jpg";
+import imageOneChristmas from "../../../public/assets/macchiato.jpg";
+import imageTwoChristmas from "../../../public/assets/kaffee.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function SpecialEditon() {
@@ -21,8 +22,16 @@ export default function SpecialEditon() {
       </section>
 
       <section className="edition__img-container">
-        <img className="edition__img1" src={imageChristmas} alt="" />
-        <img className="edition__img2" src={imageChristmas} alt="" />
+        <img
+          className="edition__img1"
+          src={imageOneChristmas}
+          alt="En Julig bild på en kopp kaffe med jul dekorationer i bakgrunden"
+        />
+        <img
+          className="edition__img2"
+          src={imageTwoChristmas}
+          alt="En julig bild på en Latte macchiato med kanelstång bredvid, en grankotte och Jul dekorationer i bakgrunden"
+        />
       </section>
     </main>
   );

@@ -9,12 +9,15 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer__headline">
-        <h2 className="footer__headline-title">Smakresan fortsätter...</h2>
-        <h3 className="footer__headline-text">
+        <h1 aria-label="titel 1" className="footer__headline-title">
+          Smakresan fortsätter...
+        </h1>
+        <h2 aria-label="titel 2" className="footer__headline-text">
           Prenumerera för att vara del av Café Encantos kreativa kaffevärld!
-        </h3>
+        </h2>
         <div className="footer__subscribe-content">
           <input
+            aria-label="en inputfält för att skriva in epostadress för prenumeration"
             className="footer__input"
             type="email"
             name="email"
@@ -28,7 +31,7 @@ export default function Footer() {
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__links">
-            <strong>Cafe Encanto</strong>
+            <h3>Cafe Encanto</h3>
             <p>
               Vårt Kaffe <br />
               Kaffe för Hemmet <br />
@@ -41,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__information">
-            <strong>Information</strong>
+            <h3>Information</h3>
             <p>
               Näring och Allergener <br />
               Privacy Notice <br />
@@ -52,7 +55,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__social-media">
-            <strong>Följ oss...</strong>
+            <h3>Följ oss...</h3>
             <div>
               <a
                 href="https://github.com/nicole-avila/cafe-encanto"

@@ -3,12 +3,11 @@ import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import coffeeBeans from "../../../public/assets/coffee-beans.jpg";
-// import beanField from "../../../public/assets/coffee-bean-field.png";
 import Hero from "../../components/Hero/Hero";
-// import coffeeVideo from "../../../public/video-cafe.mp4";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-// import video from "../../../public/";
+// import beanField from "../../../public/assets/coffee-bean-field.png";
+// import coffeeVideo from "../../../public/video-cafe.mp4";
 
 export default function Coffee() {
   const navigate = useNavigate();
@@ -30,11 +29,14 @@ export default function Coffee() {
             className="coffee__hero-img"
             image={{
               src: coffeeBeans,
-              alt: "a wooden bowl filled with coffee beans",
+              alt: "En bild på en liten träskål fylld med kaffebönor, med turkos grön bakgrund och gröna löv runt trädskålen",
             }}
           />
           <div className="coffee__hero-content">
-            <p className="coffee__hero-text">
+            <p
+              aria-label="En textbeskrivning om Cafe Encanto"
+              className="coffee__hero-text"
+            >
               Välkommen till Café Encanto, där varje kopp bär med sig en
               historia av omsorgsfullt utvalda kaffebönor. Våra bönor hämtas
               från källor runt om i världen, där jordens mångfald och unika
@@ -47,7 +49,11 @@ export default function Coffee() {
         </div>
 
         <div className="coffee__video-content">
-          <video className="coffee__video" controls>
+          <video
+            aria-label="Ett video klipp med engelska tal, finns med två alternativ video text"
+            className="coffee__video"
+            controls
+          >
             <source src="/video-cafe.mp4" type="video/mp4" />
             <track
               kind="captions"
@@ -55,10 +61,19 @@ export default function Coffee() {
               src="/subtitles.vtt"
               label="English"
             />
+            <track
+              kind="captions"
+              srcLang="se"
+              src="/subtitles-swe.vtt"
+              label="Svenska"
+            />
             Din webbläsare stöder inte videotaggen.
           </video>
           {/* <img className="coffee__video" src={beanField} alt="" /> */}
-          <p className="coffee__video-text">
+          <p
+            aria-label="En textbeskrivning om cafe encanto's kaffe tillverkan"
+            className="coffee__video-text"
+          >
             Vårt engagemang för hög kvalitet genomsyrar hela processen, från
             böna till bryggning. Varje bönas resa är noga övervakad för att
             säkerställa att endast de mest utsökta och karakteristiska smakerna

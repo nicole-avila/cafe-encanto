@@ -28,14 +28,12 @@ export default function Navbar() {
 
   return (
     <nav className={color ? "navbar navbar__bg" : "navbar"}>
-      {/* <div className="navbar__wrapper"> */}
-
       <div className="navbar__logo">
         <h1>Café Encanto</h1>
         <img
           className="navbar__img-logo"
           src={encantoIcon}
-          alt="under line detail for logo Cafe Encanto"
+          alt="logo ikon cafe encanto"
         />
       </div>
 
@@ -65,8 +63,6 @@ export default function Navbar() {
         <Link to="/coffee">Kaffe</Link>
         <Link to="/about-us">Om Oss</Link>
       </div>
-
-      {/* </div> */}
     </nav>
   );
 }
